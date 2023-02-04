@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>9b94ed75-d6e0-4b4e-99bf-ccc06c58d12e</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.11" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleQ.Broker.Slim\SimpleQ.Broker.Slim.csproj" />
+    <ProjectReference Include="..\SimpleQ.Interface.Consumer.Http\SimpleQ.Interface.Relayer.csproj" />
+    <ProjectReference Include="..\SimpleQ.Interface.Models\SimpleQ.Interface.Models.csproj" />
+    <ProjectReference Include="..\SimpleQ.Interface.Publisher.Http\SimpleQ.Interface.Publisher.csproj" />
+  </ItemGroup>
+
+</Project>
